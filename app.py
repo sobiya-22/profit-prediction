@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
-st.set_page_config(page_title="Profit Predictor", page_icon="📈")
+st.set_page_config(page_title="Transanalysis Profit Predictor", page_icon="📈")
 # Load data
 @st.cache_data
 def load_data():
@@ -62,7 +62,7 @@ def suggest_quantity_for_target_profit(target_profit_percent, months_ahead):
 
 # Streamlit UI
 
-st.title("📊 Profit and Sales Predictor App")
+st.title("📊 Transanalysis - Profit Predictor")
 
 st.sidebar.header("🛠️ Controls")
 months_ahead = st.sidebar.slider('Months Ahead to Predict', 1, 12, 1)
